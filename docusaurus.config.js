@@ -39,13 +39,24 @@ const config = {
     locales: ['en'],
   },
 
+  // replace your current markdown block with this:
+markdown: {
+  hooks: {
+    // supported: keep this
+    onBrokenMarkdownLinks: 'warn',
+    // NOTE: onBrokenMarkdownAnchors removed because it's not a supported option
+  },
+},
+
+
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          // use require.resolve for consistency and to avoid path issues
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -94,7 +105,7 @@ const config = {
             position: 'left',
             label: 'READ MODULES',
           },
-          
+
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -155,4 +166,6 @@ const config = {
 };
 
 export default config;
+
+
 
