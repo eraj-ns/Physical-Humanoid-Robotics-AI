@@ -1,14 +1,13 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
+    
+    // --- MODULE 1: ROS 2 Architecture & Programming ---
     {
       type: 'category',
       label: 'Module 1: ROS 2 Architecture & Programming',
-      // Docusaurus automatically uses the directory name (Module1) if 'link' is omitted,
-      // but 'index.md' or 'intro.md' can serve as the main landing page.
-      // Hum 'intro.md' ko pehla item bana dete hain.
-      
       items: [
+        // 'index.md' aur 'intro.md' ko shamil kiya gaya hai agar woh module ke main page hain
         'Module1/intro', 
         'Module1/index', 
         'Module1/ch01-ros2-architecture',
@@ -18,37 +17,44 @@ const sidebars = {
       ],
     },
     
+    // --- MODULE 2: Digital Twin and Simulation ---
     {
       type: 'category',
       label: 'Module 2: Digital Twin and Simulation',
       items: [
         'Module2/intro',
         'Module2/index',
-        'Module2/ch01-gazebo-physics-and-colli', // .md extension ke baghair ch01-gazebo-physics-and-colli
-        'Module2/ch02-digital-twin-environment-', // .md extension ke baghair ch02-digital-twin-environment-
+        // Files ke lambe, mukammal naam use kiye gaye hain:
+        'Module2/ch01-gazebo-physics-and-collisions', 
+        'Module2/ch02-digital-twin-environment-design', 
       ],
     },
     
+    // --- MODULE 3: Isaac Sim and AI-Robot Basics ---
     {
       type: 'category',
       label: 'Module 3: Isaac Sim and AI-Robot Basics',
       items: [
-        'Module3/01-Introduction-to-AI-Robot-B...', // .md extension ke baghair 01-Introduction-to-AI-Robot-B...
-        'Module3/02-Isaac-Sim-Simulation',
-        'Module3/03-Isaac-ROS-VSLAM-and-Nav...',
+        'Module3/intro',
         'Module3/index',
+        // Yahan bhi files ke mukammal naam use kiye gaye hain:
+        'Module3/01-Introduction-to-AI-Robot-Brain',
+        'Module3/02-Isaac-Sim-Simulation',
+        'Module3/03-Isaac-ROS-VSLAM-and-Nav2-Planning', // Pura naam screenshot se liya gaya hai
       ],
     },
     
+    // --- MODULE 4: Cognitive Planning and Autonomy ---
     {
       type: 'category',
       label: 'Module 4: Cognitive Planning and Autonomy',
-      // Aapki image mein '_category_json' file hai, lekin Docusaurus ko uski zaroorat nahi hoti.
       items: [
+        'Module4/intro',
+        'Module4/index',
         'Module4/ch01-voice-to-action',
         'Module4/ch02-llm-cognitive-planning',
         'Module4/ch03-vision-and-navigation',
-        'Module4/ch04-capstone-autonomous-h...',
+        'Module4/ch04-capstone-autonomous-humanoid', // Pura naam screenshot se liya gaya hai
       ],
     },
   ],
