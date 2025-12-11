@@ -6,29 +6,26 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Module 1 — The Robotic Nervous System (ROS 2)',
-    link: '/docs/module1',
-    description:
-      'ROS 2 middleware, nodes, topics, services, Python agents, and humanoid URDF modeling.',
+    link: '/docs/Module1/intro',  // <-- Capital M, exact folder name
+    description: 'ROS 2 middleware, nodes, topics, services, Python agents, and humanoid URDF modeling.',
   },
   {
     title: 'Module 2 — The Digital Twin (Gazebo & Unity)',
-    link: '/docs/module2',
-    description:
-      'Physics simulation, realistic environments, sensor modeling, and virtual testing.',
+    link: '/docs/Module2/intro',
+    description: 'Physics simulation, realistic environments, sensor modeling, and virtual testing.',
   },
   {
     title: 'Module 3 — The AI-Robot Brain (NVIDIA Isaac™)',
-    link: '/docs/module3',
-    description:
-      'Photorealistic simulation, Isaac ROS, VSLAM, and humanoid navigation with Nav2.',
+    link: '/docs/Module3/Introduction-to-AI-Robot-Brain',
+    description: 'Photorealistic simulation, Isaac ROS, VSLAM, and humanoid navigation with Nav2.',
   },
   {
     title: 'Module 4 — Vision-Language-Action (VLA)',
-    link: '/docs/module4',
-    description:
-      'LLMs for robotics, voice commands, cognitive planning, and autonomous humanoid capstone.',
+    link: '/docs/Module4/intro',
+    description: 'LLMs for robotics, voice commands, cognitive planning, and autonomous humanoid capstone.',
   },
 ];
+
 
 function Feature({ title, description, link }) {
   return (
