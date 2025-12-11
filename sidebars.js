@@ -15,7 +15,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Module 2: Digital Twin and Simulation',
-      link: { type: 'doc', id: 'Module2/intro' },
+      link: { type: 'doc', id: 'Module2/intro' }, // must exist
       items: [
         'Module2/ch01-gazebo-physics-and-collisions',
         'Module2/ch02-digital-twin-environment-design',
@@ -24,7 +24,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Module 3: Isaac Sim and AI-Robot Basics',
-      link: { type: 'doc', id: 'Module3/module3' },
+      link: { type: 'doc', id: 'Module3/intro' }, // match with actual file
       items: [
         'Module3/Introduction-to-AI-Robot-Brain',
         'Module3/Isaac-Sim-Simulation',
@@ -34,7 +34,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Module 4: Cognitive Planning and Autonomy',
-      link: { type: 'doc', id: 'Module4/index' },
+      link: { type: 'doc', id: 'Module4/intro' },
       items: [
         'Module4/ch01-voice-to-action',
         'Module4/ch02-llm-cognitive-planning',
@@ -46,6 +46,7 @@ const sidebars = {
 };
 
 module.exports = sidebars;
+
 
 
 
