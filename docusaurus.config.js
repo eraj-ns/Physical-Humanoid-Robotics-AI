@@ -16,7 +16,7 @@ const config = {
   organizationName: 'eraj-ns',
   projectName: 'Physical-Humanoid-Robotics-AI',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
@@ -59,7 +59,7 @@ const config = {
             label: 'READ MODULES',
           },
           {
-            href: 'https://github.com/eraj-ns/Physical-Humanoid-Robotics-AI',
+            href: 'https://github.com/eraj-ns',
             label: 'GitHub',
             position: 'right',
           },
@@ -99,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/eraj-ns/Physical-Humanoid-Robotics-AI',
+                href: 'https://github.com/eraj-ns',
               },
             ],
           },
@@ -114,3 +114,4 @@ const config = {
 };
 
 export default config;
+
